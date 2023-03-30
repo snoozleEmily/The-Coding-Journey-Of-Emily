@@ -1,8 +1,7 @@
-const data = [
-    //console log the language to see what type it is, maybe it'll need to be a string!
+const info = [
     {  
       id: 1,
-      language: english,
+      language: 'english',
       presentation: `Hi, I'm Emily, and I'm currently learning how to become a front-end developer. I discovered my fascination with coding in 2022, and I've been exploring the creative possibilities ever since. I'm attending college to further develop my skills and knowledge in this field.
 
       In addition to my passion for coding, I'm also an English teacher. I enjoy teaching and helping others learn, and I believe this skill set will be valuable in my future as a developer. Clear communication is essential in both teaching and programming, and I strive to make my code easy to understand and concise.
@@ -13,7 +12,7 @@ const data = [
     },
     {  
         id: 2,
-        language: portuguese,
+        language: 'portuguese',
         presentation: `Olá, eu sou a Emily e estou me tornando uma desenvolvedora de front-end. Comecei a aprender programação em 2022 e desde então estou fascinada pelas infinitas possibilidades criativas que a programação oferece. Atualmente, estou na faculdade para aprimorar minhas habilidades e conhecimentos nessa área.
 
         Além da minha paixão pela programação, também sou professora de inglês. Adoro ensinar e ajudar os outros a aprender, e acredito que essa habilidade será valiosa na minha carreira como desenvolvedora. A comunicação é fundamental tanto no ensino quanto na programação, e faço questão de escrever um código claro, conciso e compreensível.
@@ -24,7 +23,7 @@ const data = [
       },
       {  
         id: 3,
-        language: spanish,
+        language: 'spanish',
         presentation: `Hola, soy Emily y estoy en proceso de convertirme en desarrolladora de front-end. Empecé a aprender programación en 2022 y desde entonces estoy fascinada por las infinitas posibilidades creativas que ofrece la programación. Actualmente, estoy en la universidad para mejorar mis habilidades y conocimientos en esta área.
 
         Además de mi pasión por la programación, también soy profesora de inglés. Me encanta enseñar y ayudar a otros a aprender, y creo que esta habilidad será valiosa en mi futuro como desarrolladora. La comunicación es clave tanto en la enseñanza como en la programación, y me esfuerzo por escribir un código claro, conciso y comprensible.
@@ -35,7 +34,7 @@ const data = [
       },
       {  
         id: 4,
-        language: french,
+        language: 'french',
         presentation: `Bonjour, je m'appelle Emily et je suis en train de devenir développeuse front-end. J'ai commencé à apprendre la programmation en 2022 et depuis, je suis fascinée par les possibilités créatives que le codage offre. Actuellement, je suis étudiante à l'université pour approfondir mes compétences et mes connaissances dans ce domaine.
 
         En plus de ma passion pour le codage, je suis également professeure d'anglais. J'adore enseigner et aider les autres à apprendre, et je pense que cette compétence sera précieuse dans mon avenir de développeuse. La communication est essentielle tant dans l'enseignement que dans la programmation, et je m'efforce de rendre mon code clair, concis et compréhensible.
@@ -46,6 +45,6 @@ const data = [
       },
   ];
   
-  export default data;
+  export default info;
   
  
