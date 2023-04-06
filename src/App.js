@@ -8,6 +8,18 @@ import './App.css';
 
 function App() {
   const [data, setData] = useState(info)
+  const [language, setLangauge] = useState(data[0])
+
+  /* const changeLangauge = (data) => {
+    const newValue = () => {
+      changeIndex = how do I get the index number?
+      function find(){
+      var index = data[{}]
+      return index
+    }
+    setLangauge(newValue)
+  }}
+   */
   
   return (
     <main>
@@ -15,7 +27,7 @@ function App() {
       <section>
         <img src={image} alt="Emily's portrait" />
         <div className="container">
-          <Presentation data={data}/>
+          <Presentation data={data} language={language}/>
         </div>
       </section>
     </main>
