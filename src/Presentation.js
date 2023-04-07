@@ -1,21 +1,14 @@
 import React from 'react';
-import { useState } from 'react';
 
-function Presentation({data, language}){
-    
-   console.log(language)
+function Presentation({language}){
+    const lang = language.presentation
     return(
         <main>
-            {data.map((text) =>{
-                const {id, presentation} = text
-                return (
-                    <article key={id}>
-                        <p>
-                            {presentation}
-                        </p>
-                    </article>
-                );
-            })}
+           <article>
+                <p>
+                    {lang}
+                </p>
+            </article>
         </main>
     );
 }   
