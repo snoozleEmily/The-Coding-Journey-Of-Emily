@@ -13,13 +13,13 @@ const info = [
     {  
         id: 2,
         language: 'portuguese',
-        presentation: `Olá, eu sou a Emily e estou me tornando uma desenvolvedora de front-end. Comecei a aprender programação em 2022 e desde então estou fascinada pelas infinitas possibilidades criativas que a programação oferece. Atualmente, estou na faculdade para aprimorar minhas habilidades e conhecimentos nessa área.
+        presentation: `Olá, eu sou a Emily e estou me tornando uma desenvolvedora Front-end. Comecei a aprender programação em 2022 e, desde então, estou fascinada pelas infinitas possibilidades criativas que a programação oferece. Atualmente, estou na faculdade para aprimorar minhas habilidades e conhecimentos nessa área.
 
-        Além da minha paixão pela programação, também sou professora de inglês. Adoro ensinar e ajudar os outros a aprender, e acredito que essa habilidade será valiosa na minha carreira como desenvolvedora. A comunicação é fundamental tanto no ensino quanto na programação, e faço questão de escrever um código claro, conciso e compreensível.
-        
-        Utilizo o JavaScript e o React para criar interfaces atraentes e fáceis de usar em aplicações web. Meu objetivo é continuar aprimorando minhas habilidades nessas áreas e desenvolver interfaces que cativem os usuários.
-        
-        Quero continuar melhorando minhas habilidades de programação e trabalhar como desenvolvedora. Estou muito animada para fazer parte da comunidade de tecnologia e contribuir para o desenvolvimento de soluções inovadoras que possam facilitar e tornar a vida das pessoas mais agradável.`,
+             Além da minha paixão pela programação, também sou professora de inglês. Adoro ensinar e ajudar os outros a aprender, e acredito que essa habilidade será valiosa na minha carreira como desenvolvedora. A comunicação é fundamental tanto no ensino quanto na programação, e faço questão de escrever um código claro, conciso e compreensível.
+
+             Utilizo HTML, CSS, JavaScript e React para criar interfaces atraentes e de fácil uso em aplicações web. Meu objetivo é continuar aprimorando minhas habilidades nessas áreas, desenvolvendo interfaces que cativem os usuários e estar aberta a novas tecnologias.
+
+             Quero continuar aprimorando minhas habilidades de programação e trabalhar como desenvolvedora. Estou muito animada para fazer parte da comunidade de tecnologia e contribuir para o desenvolvimento de soluções inovadoras que possam facilitar e tornar a vida das pessoas mais agradável.`,
       },
       {  
         id: 3,

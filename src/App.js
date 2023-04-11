@@ -25,7 +25,7 @@ function App() {
     <main>
       <Flags />
       <section>
-        <img src={image} alt="Emily's portrait" className='portrait'/>
+        <img src={image} alt="Emily's portrait" className="portrait"/>
         <Presentation language={language}/>
       </section>
     </main>

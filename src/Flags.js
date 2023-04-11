@@ -1,7 +1,8 @@
 import React from 'react';
+import './App.css';
 
 function Flags(){
-    //How can I acess setLanguage here?????????????????????
+    //How can I acess setLanguage here?
     return (
         <div className="flags">
             <button className="us">us</button>
