@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import info from './data';
-import image from './head-photo.jpg'
+import Portrait from './Portrait';
 import Presentation from './Presentation'
 import Flags from'./Flags'
 import './App.css';
@@ -25,7 +25,7 @@ function App() {
     <main>
       <Flags />
       <section>
-        <img src={image} alt="Emily's portrait" className="portrait"/>
+        <Portrait />
         <Presentation language={language}/>
       </section>
     </main>

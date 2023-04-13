@@ -1,5 +1,5 @@
 /* Let's style this baby */
- 
+
 :root {
     --clr--base: #C7E7FA;
     --clr--letters: #2C2C2C;
@@ -9,18 +9,21 @@
 body {
     background-color: var(--clr--base);
     color: var(--clr--letters);
-  }
-
-  .flags {
+}
+.flags {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2px;
+    grid-gap: 4px;
     position: relative;
-    top: 10px;
-    left: 83%;
-    background-color: var(--clr--container);
+    float: right;
     padding: 5px;
+    margin-right: 10px;
+    margin-top: -25px;
+    background-color: var(--clr--container);  
     
+} 
+.flag {
+    width: 25px;
 }
 
 .portrait {
@@ -56,5 +59,6 @@ body {
 .introduction {
     padding: 4px;
     text-align: justify;
+    line-height: 25px;
     
 }
