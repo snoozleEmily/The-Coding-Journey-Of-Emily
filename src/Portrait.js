@@ -1,31 +1,32 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
-import image from './head-photo.jpg'
+import image from './head-photo.jpg';
 
-function Portrait(){
-    /* const ref = React.useRef(null);
+function Portrait() {
+    const ref = useRef(null);
+    const [width, setWidth] = useState(undefined);
 
     useEffect(() => {
-        // The DOM element is accessible here.
-        console.log(ref.current);
-      }, []); 
+            setWidth(ref.current.offsetWidth);
+            /* I need this to load everytime there is a change */
+    }, []);
 
-    const handleOnLoad = () =>{
-        const width = ref.offsetWidth
-        console.log(width)
-    } */
-
-
-
-    /* Como posso mudar o css da imagem baseado no tamanho dela? */
-
+    const handleOnLoad = () => {
+        setWidth(ref.current.offsetWidth);
+        console.log(width);
+    }
 
     return (
-        <picture >
-            <img src={image} alt="Emily's portrait" className="portrait"/>
+        <picture>
+            <img
+                ref={ref}
+                src={image}
+                alt="Emily's portrait"
+                className={width < 130 ? "portraitsmall" : "portrait"}
+                onLoad={handleOnLoad}
+            />
         </picture>
     );
-
-}   
+}
 
 export default Portrait;

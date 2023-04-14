@@ -2,7 +2,7 @@ import { useState } from 'react';
 import info from './data';
 import Portrait from './Portrait';
 import Presentation from './Presentation'
-import Flags from'./Flags'
+import Navbar from'./Navbar'
 import './App.css';
 
 
@@ -23,11 +23,14 @@ function App() {
   
   return (
     <main>
-      <Flags />
+      <Navbar />
       <section>
         <Portrait />
         <Presentation language={language}/>
       </section>
+      <footer className='footer'>
+        <div className="copyrights"></div>
+      </footer>
     </main>
   );
   

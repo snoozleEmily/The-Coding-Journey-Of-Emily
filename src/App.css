@@ -4,26 +4,38 @@
     --clr--base: #C7E7FA;
     --clr--letters: #2C2C2C;
     --clr--container: #ffffff80;
+    --clr--border: #797979;
 } 
 
 body {
     background-color: var(--clr--base);
     color: var(--clr--letters);
 }
+.navbar{
+    background-color: var(--clr--container);
+    padding: 3px 100%;    
+    top: 0;
+} 
+
 .flags {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 4px;
-    position: relative;
+    position: relative; 
     float: right;
-    padding: 5px;
     margin-right: 10px;
-    margin-top: -25px;
+    margin-top: -16px; 
     background-color: var(--clr--container);  
     
-} 
+}  
+
 .flag {
     width: 25px;
+}
+.flag:hover {
+    width: 27px;
+    border: 1px solid var(--clr--border);
+    box-shadow: 5px 5px 8px var(--clr--border);
 }
 
 .portrait {
@@ -31,14 +43,26 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 3em;
     width: 30%;
 
     max-width: 12em;
     height: auto;  
 
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 8px var(--clr--border);
+}
+
+.portraitsmall {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    width: 70%;
+
+    /* box-shadow: 5px 5px 8px var(--clr--border); */
 }
 
 .introcontainer {
@@ -49,11 +73,13 @@ body {
     margin-right: auto;
 
     background-color: var(--clr--container);
+    box-shadow: 5px 5px 8px var(--clr--border);
     padding: 5px;
     padding-right: 30px;
     padding-left: 30px;
 
     max-width: 55em;
+    
 }
 
 .introduction {
