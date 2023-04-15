@@ -13,16 +13,16 @@ function Navbar(){
     
     return (
         <navbar className="navbar">
-            <div className="socialmedia">
-                {/* <FaGithubSquare/>
-                <FaInstagramSquare/>
-                <FaLinkedin/> */}
+            <div className="icons">
+                <FaGithubSquare className="icon"/>
+                <FaInstagramSquare className="icon"/>
+                <FaLinkedin className="icon"/> 
             </div>
             <div className="flags">
-            <img src={usflag} alt="us flag" className="flag"/>
-            <img src={brflag} alt="br flag" className="flag"/>
-            <img src={esflag} alt="es flag" className="flag"/>
-            <img src={frflag} alt="fr flag" className="flag"/>
+                <img src={usflag} alt="us flag" className="flag"/>
+                <img src={brflag} alt="br flag" className="flag"/>
+                <img src={esflag} alt="es flag" className="flag"/>
+                <img src={frflag} alt="fr flag" className="flag"/>
             </div>
         </navbar>
         

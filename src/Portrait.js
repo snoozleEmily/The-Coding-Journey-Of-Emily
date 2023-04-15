@@ -3,17 +3,27 @@ import './App.css';
 import image from './head-photo.jpg';
 
 function Portrait() {
-    const ref = useRef(null);
-    const [width, setWidth] = useState(undefined);
-
+    const ref = useRef();
+    const [width, setWidth] = useState();
+    console.log(width)
     useEffect(() => {
-            setWidth(ref.current.offsetWidth);
-            /* I need this to load everytime there is a change */
+        let debounceTimeout;
+        
+        const handleResize = () => {
+            clearTimeout(debounceTimeout); /* Function to fix image glitching */
+            debounceTimeout = setTimeout(() => {
+                setWidth(ref.current.offsetWidth);
+            }, 100); 
+        }
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
     }, []);
 
     const handleOnLoad = () => {
         setWidth(ref.current.offsetWidth);
-        console.log(width);
     }
 
     return (
@@ -22,7 +32,7 @@ function Portrait() {
                 ref={ref}
                 src={image}
                 alt="Emily's portrait"
-                className={width < 130 ? "portraitsmall" : "portrait"}
+                className={width < 150 ? "portraitsmall" : "portrait"}
                 onLoad={handleOnLoad}
             />
         </picture>
