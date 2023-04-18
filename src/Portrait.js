@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
-import image from './head-photo.jpg';
+import image from './images/head-photo.jpg';
 
 function Portrait() {
     const ref = useRef();
     const [width, setWidth] = useState();
-    console.log(width)
+    
     useEffect(() => {
         let debounceTimeout;
         

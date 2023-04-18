@@ -5,10 +5,9 @@ import Presentation from './Presentation'
 import Navbar from'./Navbar'
 import './App.css';
 
-
 function App() {
-  /* const [data, setData] = useState(info) */
   const [language, setLangauge] = useState(info[0])
+  
 
   /* const changeLangauge = (data) => {
     const newValue = () => {
@@ -20,7 +19,7 @@ function App() {
     setLangauge(newValue)
   }}
    */
-  
+
   return (
     <main>
       <Navbar />

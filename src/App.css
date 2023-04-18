@@ -1,115 +1,114 @@
 :root {
-    --clr--base: #CBDFE0;
-    --clr--base2: #318185;
-    --clr--letters: #2C2C2C;
-    --clr--navbar: #0A696D;
-    --clr--container: #ffffff80;
-    --clr--border: #797979;
-    --clr--border--hover: #000000;
-    --clr--hover: #05050575;
-    --clr--icons: #F7F7F7;
-} 
+  --clr--base: #cbdfe0;
+  --clr--letters: #2c2c2c;
+  --clr--navbar: #0a696d;
+  --clr--container: #ffffff80;
+  --clr--border: #797979;
+  --clr--border--hover: #000000;
+  --clr--hover: #05050575;
+  --clr--icons: #f7f7f7;
+}
 
 body {
-    background-color: linear-gradient(to bottom right, var(--clr--base), var(--clr--base2));
-    color: var(--clr--letters);
+  background-color: var(--clr--base);
+  color: var(--clr--letters);
 }
-.navbar{
-    display:flex;
-    width: 100%;
-    padding-bottom: 6px;    
-    top: 0;
-    background-color: var(--clr--navbar);
-    overflow: visible; 
-} 
-.icons{
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2px;
-    margin-top: 4px;
-    margin-left: 3px;
-    position: absolute;
-    left: 0; 
+.navbar {
+  display: flex;
+  width: 100%;
+  padding-bottom: 6px;
+  top: 0;
+  background-color: var(--clr--navbar);
+  overflow: visible;
 }
-.icon{
-    width: 20px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-    color: var(--clr--icons);
+.icons {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+  margin-top: 4px;
+  margin-left: 3px;
+  position: absolute;
+  left: 0;
+}
+.icon {
+  width: 20px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  color: var(--clr--icons);
 }
 .icon:hover {
-    width: 22px;
-    transform: scale(1.1);
-    margin-right: -2px;
+  width: 22px;
+  transform: scale(1.1);
+  margin-right: -2px;
 }
 .flags {
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 4px;
-    margin-left: auto;
-    margin-right: 10px;
-    margin-top: 8px;
-}  
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 8px;
+}
 
 .flag {
-    width: 25px;
-    transition: transform 0.3s ease-in-out;
+  width: 25px;
+  transition: transform 0.3s ease-in-out;
 }
 .flag:hover {
-    width: 27px;
-    transform: scale(1.1);
-    box-shadow: 5px 5px 8px var(--clr--border--hover);
-    margin-left: -2px;
-    margin-right: -2px;
+  width: 27px;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 8px var(--clr--border--hover);
+  margin-top: -2px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
 .portrait {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    width: 30%;
-
-    max-width: 12em;
-    height: auto;  
-
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 8px var(--clr--border);
+  border-radius: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  width: 30%;
+  max-width: 12em;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 5px var(--clr--border);
+}
+.portrait:hover {
+  box-shadow: 5px 5px 8px var(--clr--border);
 }
 
 .portraitsmall {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 20px;
-    padding-top: 5px;
-    width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  width: 70%;
 
-    /* box-shadow: 5px 5px 8px var(--clr--border); */
+  /* box-shadow: 5px 5px 8px var(--clr--border); */
 }
 
 .introcontainer {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-color: var(--clr--container);
-    box-shadow: 5px 5px 8px var(--clr--border);
-    padding: 5px;
-    padding-right: 30px;
-    padding-left: 30px;
+  background-color: var(--clr--container);
+  box-shadow: 5px 5px 8px var(--clr--border);
+  padding: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
 
-    max-width: 55em;
-    
+  max-width: 55em;
 }
 
 .introduction {
-    padding: 4px;
-    text-align: justify;
-    line-height: 25px;
-    
+  padding: 4px;
+  text-align: justify;
+  line-height: 25px;
 }

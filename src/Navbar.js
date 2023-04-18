@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import usflag from './flags/us-flag.jpg'
-import brflag from './flags/br-flag.jpg'
-import esflag from './flags/es-flag.jpg'
-import frflag from './flags/fr-flag.jpg'
+import usflag from './images/us-flag.jpg'
+import brflag from './images/br-flag.jpg'
+import esflag from './images/es-flag.jpg'
+import frflag from './images/fr-flag.jpg'
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
@@ -12,7 +12,7 @@ function Navbar(){
     //How can I acess setLanguage here?
     
     return (
-        <navbar className="navbar">
+        <header className="navbar">
             <div className="icons">
                 <FaGithubSquare className="icon"/>
                 <FaInstagramSquare className="icon"/>
@@ -24,7 +24,7 @@ function Navbar(){
                 <img src={esflag} alt="es flag" className="flag"/>
                 <img src={frflag} alt="fr flag" className="flag"/>
             </div>
-        </navbar>
+        </header>
         
     );
 
