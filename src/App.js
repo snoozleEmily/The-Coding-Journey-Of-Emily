@@ -6,23 +6,18 @@ import Navbar from'./Navbar'
 import './App.css';
 
 function App() {
-  const [language, setLangauge] = useState(info[0])
+  const [language, setLanguage] = useState(info[0])
   
-
-  /* const changeLangauge = (data) => {
-    const newValue = () => {
-      changeIndex = how do I get the index number?
-      function find(){
-      var index = data[{}]
-      return index
+  const changeLanguage = (data) => {
+    const currentIndex = data.indexOf(language);
+    if (currentIndex !== -1 && currentIndex < data.length - 1) {
+      setLanguage(data[currentIndex + 1]);
     }
-    setLangauge(newValue)
-  }}
-   */
+  };
 
   return (
     <main>
-      <Navbar />
+      <Navbar setLanguage={setLanguage}/>
       <section>
         <Portrait />
         <Presentation language={language}/>
