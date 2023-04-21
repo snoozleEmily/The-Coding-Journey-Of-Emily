@@ -1,13 +1,13 @@
-const info = [
+const intros = [
   {
     id: 1,
-    presentation: `Hi, I'm Emily, and I'm currently learning how to become a front-end developer. I discovered my fascination with coding in 2022, and I've been exploring the creative possibilities ever since. I'm attending college to further develop my skills and knowledge in this field.
+    presentation: `Hi, I am Emily, and I am currently learning how to become a front-end developer. I discovered my fascination with coding in 2022, and I've been exploring the creative possibilities ever since. I am attending college to further develop my skills and knowledge in this field.
 
-      In addition to my passion for coding, I'm also an English teacher. I enjoy teaching and helping others learn, and I believe this skill set will be valuable in my future as a developer. Clear communication is essential in both teaching and programming, and I strive to make my code easy to understand and concise.
+      In addition to my passion for coding, I am also an English teacher. I enjoy teaching and helping others learn, and I believe this skill set will be valuable in my future as a developer. Clear communication is essential in both teaching and programming, and I strive to make my code easy to understand and concise.
       
       My primary tools are JavaScript and React, which I use to create visually appealing and easy-to-navigate front-end web applications. My objective is to continuously improve my skills in these areas and produce interfaces that delight users.
       
-      Ultimately, I aim to continue honing my programming skills and eventually work as a developer. I'm thrilled to be part of the tech community and excited to contribute to the development of innovative solutions that can make people's lives easier and more enjoyable.`,
+      Ultimately, I aim to continue honing my programming skills and eventually work as a developer. I am thrilled to be part of the tech community and excited to contribute to the development of innovative solutions that can make people's lives easier and more enjoyable.`,
   },
   {
     id: 2,
@@ -41,4 +41,4 @@ const info = [
   },
 ];
 
-export default info;
+export default intros;

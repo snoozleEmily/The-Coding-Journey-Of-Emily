@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
-function Presentation({language}){
-    const lang = language.presentation
+function Presentation({ language }){
+    const presentationText = language.presentation
     return(
         <main>
-           <article className='introcontainer'>
+           <article className='presentation-container'>
                 <p className='introduction'>
-                    {lang}
+                    {presentationText}
                 </p>
             </article>
         </main>
