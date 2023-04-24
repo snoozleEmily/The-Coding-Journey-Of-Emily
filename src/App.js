@@ -14,18 +14,20 @@ function App() {
       setLanguage(data[currentIndex + 1]);
     }
   };
-
+  /* Fix the footer thingy when the screen is small, add pop up? And also animated background! */
   return (
     <main>
       <Navbar setLanguage={setLanguage} />
       <section>
         <Portrait />
-        <Presentation language={language} />
+        <div className="container">
+          <Presentation language={language} />
+        </div>
       </section>
       <footer className="footer">
         <p className="copyrights">
-          &copy; 2023 snoozleEmily. All rights reserved.
-          This website is licensed under the MIT License.
+          &copy; 2023 snoozleEmily. All rights reserved. This website is
+          licensed under the MIT License.
         </p>
       </footer>
     </main>

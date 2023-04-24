@@ -10,6 +10,7 @@ function Portrait() {
       let debounceTimeout;
   
       const handleResize = () => {
+       /*  To prevent image from glitching  */
         clearTimeout(debounceTimeout);
         debounceTimeout = setTimeout(() => {
           setWidth(ref.current.offsetWidth);
