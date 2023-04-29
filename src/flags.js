@@ -33,6 +33,7 @@ function Flags({ setLanguage }) {
     <div className="flags">
       {flags.map((flag) => (
         <img
+          key={flag.id}
           src={flag.flag}
           alt={`${flag.flag} flag`}
           className="flag"

@@ -1,44 +1,22 @@
-import React, { useRef, useEffect, useState } from 'react';
-import './App.css';
-import image from './images/head-photo.jpg';
+import React from "react";
+import image from "./images/head-photo.jpg";
+import WindowResize from "./WindowResize";
+import "./App.css";
 
 function Portrait() {
-    const ref = useRef();
-    const [width, setWidth] = useState();
-  
-    useEffect(() => {
-      let debounceTimeout;
-  
-      const handleResize = () => {
-       /*  To prevent image from glitching  */
-        clearTimeout(debounceTimeout);
-        debounceTimeout = setTimeout(() => {
-          setWidth(ref.current.offsetWidth);
-        }, 100);
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-  
-    const handleOnLoad = () => {
-      setWidth(ref.current.offsetWidth);
-    };
-  
-    return (
-      <picture>
-        <img
-          ref={ref}
-          src={image}
-          alt="Emily's portrait"
-          className={width < 150 ? 'portraitsmall' : 'portrait'}
-          onLoad={handleOnLoad}
-        />
-      </picture>
-    );
-  }
+  return (
+    <WindowResize>
+      {(windowWidth) => (
+        <picture>
+          <img
+            src={image}
+            alt="Emily's portrait"
+            className={`${windowWidth < 540 ? "portraitsmall" : "portrait"}`}
+          />
+        </picture>
+      )}
+    </WindowResize>
+  );
+}
 
 export default Portrait;

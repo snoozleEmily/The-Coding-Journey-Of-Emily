@@ -1,0 +1,46 @@
+@import url("App.css");
+
+.arrow {
+  position: absolute;
+  right: 30px;
+  margin-top: 5px;
+  width: 0;
+  height: 0;
+
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid var(--clr--container);
+
+  transform: rotate(90deg);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.68, 0.06, 0.36, 1.06);
+}
+.arrow.show {
+  opacity: 1;
+}
+
+.popup {
+  position: absolute;
+  right: 20px;
+  margin-top: 20px;
+
+  padding: 18px;
+  background-color: var(--clr--container);
+  color: var(--clr--letters);
+
+  z-index: 9999;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.68, 0.06, 0.36, 1.06);
+}
+.popup.show {
+  opacity: 1;
+}
+
+.popup-container:hover .arrow {
+  transform: translateY(-6px) rotate(90deg);
+}
+.popup-container:hover .popup {
+  transform: translateY(-6px);
+}

@@ -1,24 +1,31 @@
 :root {
-  --clr--base: #b0bcc0;
-  --clr--sncbase: #b4bbb5;
-  --clr--letters: #2c2c2c;
-  --clr--navbar: #254551;
-  --clr--footer: #0e2a35;
-  --clr--container: #ffffff80;
-  --clr--border: #797979;
-  --clr--border--hover: #000000;
-  --clr--hover: #05050575;
-  --clr--icons: #f7f7f7;
+  --clr--base: #d0d6d8;            /* Light gray */
+  --clr--secondary-base: #b4bbb5;  /* Light green */
+  --clr--letters: #2c2c2c;         /* Dark gray */
+  --clr--navbar: #254551;          /* Navy blue */
+  --clr--footer: #0e2a35;          /* Dark navy blue */
+  --clr--container: #ffffff80;     /* Semi-transparent white */
+  --clr--border: #797979;          /* Gray */
+  --clr--border--hover: #000000;   /* Black */
+  --clr--hover: #05050575;         /* Semi-transparent black */
+  --clr--icons: #f7f7f7;           /* Light gray */
 }
 
 body {
-  background: linear-gradient(180deg, var(--clr--base), var(--clr--sncbase));
+  background: linear-gradient(180deg, var(--clr--base), var(--clr--secondary-base));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   color: var(--clr--letters);
 
   position: relative;
   min-height: 100vh;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .navbar {
   display: flex;
@@ -112,9 +119,10 @@ body {
 
   background-color: var(--clr--container);
   box-shadow: 5px 5px 8px var(--clr--border);
-  padding: 5px;
+  padding-top: 5px;
   padding-right: 30px;
   padding-left: 30px;
+  padding-bottom: 1px;
 
   max-width: 55em;
 }
@@ -122,20 +130,35 @@ body {
   box-shadow: 5px 5px 10px var(--clr--border);
 }
 .introduction {
-  padding: 4px;
+  padding: 2px;
   text-align: justify;
   line-height: 25px;
 }
-.footer {
-  margin-top: auto;
-  margin-bottom: 5px;
 
-  text-align: center;
-  font-size: 12px;
-  color: var(--clr--footer);
+/* Small screens */
+@media only screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+    font-size: 10px;
+    color: var(--clr--footer);
+  }
+
+  .copyrights {
+    position: static;
+    margin-top: 5px;
+  }
 }
-.copyrights{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+
+/* Large screens */
+@media only screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--clr--footer);
+  }
+  .copyrights {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }

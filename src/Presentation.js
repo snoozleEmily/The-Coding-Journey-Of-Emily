@@ -3,9 +3,9 @@ import "./App.css";
 
 function Presentation({ language = {} }) {
   const presentationText = language.presentation || "";
-  
+
   if (!presentationText.trim()) {
-    console.log("Language prop is empty or undefined");
+    console.log("Language prop is empty or undefined.");
   }
 
   return (
