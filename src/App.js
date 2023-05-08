@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import intros from "./data";
 import LoadingSpinner from "./LoadingSpinner.js";
 import Portrait from "./Portrait";
