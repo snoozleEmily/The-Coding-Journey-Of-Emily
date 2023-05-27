@@ -2,6 +2,7 @@
   "homepage": "https://snoozleemily.github.io/the-coding-journey-of-emily/",
   "name": "the-coding-journey-of-emily",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -42,10 +43,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
-    "@babel/preset-env": "^7.21.5",
-    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-env": "^7.22.2",
+    "@babel/preset-react": "^7.22.3",
     "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.4",
     "gh-pages": "^5.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1"
   }
