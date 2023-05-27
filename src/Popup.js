@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import WindowResize from "./WindowResize";
+import WindowResize from "./WindowResize.js";
 import "./popup.css";
 
 function Popup() {

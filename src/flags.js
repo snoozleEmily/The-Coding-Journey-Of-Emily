@@ -1,5 +1,5 @@
 import React from "react";
-import intros from "./data";
+import intros from "./data.js";
 import usflag from "./images/us-flag.jpg";
 import brflag from "./images/br-flag.jpg";
 import esflag from "./images/es-flag.jpg";
