@@ -3,7 +3,7 @@ import "./App.css";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import Flags from "./flags";
+import Flags from "./flags.js";
 
 function Navbar({ setLanguage }) {
   return (

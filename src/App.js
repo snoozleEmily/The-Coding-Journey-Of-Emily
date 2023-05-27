@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
-import intros from "./data";
+import React, { useState, useEffect } from "react";
+import intros from "./data.js";
 import LoadingSpinner from "./LoadingSpinner.js";
-import Portrait from "./Portrait";
-import Presentation from "./Presentation";
-import Navbar from "./Navbar";
+import Portrait from "./Portrait.js";
+import Presentation from "./Presentation.js";
+import Navbar from "./Navbar.js";
 import Popup from "./Popup.js";
 import Footer from "./Footer.js";
 import "./App.css";
-
+ 
 function App() {
   const [language, setLanguage] = useState(intros[0]);
   const [loading, setLoading] = useState(true);
