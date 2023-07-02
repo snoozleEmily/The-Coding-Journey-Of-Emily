@@ -35,7 +35,7 @@ function Flags({ setLanguage }) {
         <img
           key={flag.id}
           src={flag.flag}
-          alt={`${flag.flag} flag`}
+          alt={`${flag.flag}`}
           className="flag"
           onClick={() => setLanguage(flag.intro)}
         />
