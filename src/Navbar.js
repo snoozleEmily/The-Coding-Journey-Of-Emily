@@ -25,7 +25,7 @@ function Navbar({ setLanguage }) {
           className="icon"
           onClick={() =>
             window.open(
-              "https://www.linkedin.com/in/emily-alvim-38bb97216/",
+              "https://www.linkedin.com/in/emily-alvim/",
               "_blank"
             )
           }
