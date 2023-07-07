@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+// This component is to make the website accessible in smaller devices.
+
 function WindowResize({ children }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
